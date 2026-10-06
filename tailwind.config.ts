@@ -19,8 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        serif: ["var(--font-playfair)", "Georgia", "serif"],
+        sans: ["\"Plus Jakarta Sans Variable\"", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
