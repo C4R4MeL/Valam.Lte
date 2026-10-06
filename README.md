@@ -8,8 +8,8 @@ Proyek UTS Praktek POPL — Universitas Syiah Kuala.
 
 | Anggota | NIM |
 |---|---|
-| (isi) | (isi) |
-| (isi) | (isi) |
+| (Muhammad Farhan Alafif) | (2408107010075) |
+| (Muhammad Yazid Arrazi) | (2408107010072) |
 
 ## Teknologi
 
@@ -33,8 +33,8 @@ Image publik: https://hub.docker.com/r/USERNAME/valam
 docker run -p 3000:3000 USERNAME/valam:v1-UTS
 
 # atau build sendiri
-docker build -t USERNAME/valam:v1-UTS .
-docker run -p 3000:3000 USERNAME/valam:v1-UTS
+docker build -t xirenaa/valam:v1-UTS .
+docker run -p 3000:3000 xirenaa/valam:v1-UTS
 ```
 
 Dockerfile memakai tiga tahap: `deps` (npm ci), `builder` (next build, output standalone), `runner` (node:20-alpine, user non-root, hanya berkas hasil build).
