@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { products, districts } from "@/lib/mock-data";
 
 const steps = [
   { img: "/images/garden_nilam.png", title: "Panen & Penyulingan", desc: "Petani dan penyuling menghasilkan minyak nilam per batch." },
@@ -9,9 +10,9 @@ const steps = [
 ];
 
 const stats = [
-  { value: "10", label: "Batch contoh" },
-  { value: "34,2%", label: "PA tertinggi" },
-  { value: "8", label: "Kabupaten asal" },
+  { value: String(products.length), label: "Batch contoh" },
+  { value: `${Math.max(...products.map((p) => p.pa_percentage)).toString().replace(".", ",")}%`, label: "PA tertinggi" },
+  { value: String(districts.length), label: "Kabupaten asal" },
 ];
 
 export default function Home() {
